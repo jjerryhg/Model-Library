@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+@Styles.Render("~/Content/main")
+@Styles.Render("~/Content/DarkMode")
+
+<main id="content" style="margin-left: 50px; margin-top: 70px;">
+    <section id="search">
+        <div class="search-wrapper">
+            <div class="search-container">
+                <div class="search-header justify-content-between">
+                    <div class="ms-2">
+                        <span>Search</span>
+                    </div>
+                </div>
+                <div class="search-body d-flex flex-column">
+                    <div class="ms-5 mt-4 mb-1">
+                        <span><b>Case Name: </b><span></span></span>
+                    </div>
+                    <div class="d-flex justify-content-center mb-1 me-5 ms-5">
+                        <div class="form-outline mb-4" style="width: 100%;" data-mdb-input-init>
+                            <input type="search" class="form-control" id="search-input" placeholder="Search" onkeyup="filterSearchFunction()">
+                        </div>
+                    </div>
+                </div>
+                <div class="search-footer">
+                    <div class="table-container ms-5 mt-3 me-5">
+                        <table class="table table-striped-columns" id="search-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Attribute</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2024/1/1</th>
+                                    <td>ID00</td>
+                                    <td>Attribute00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2024/1/1</th>
+                                    <td>ID01</td>
+                                    <td>Attribute01</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2024/1/1</th>
+                                    <td>ID02</td>
+                                    <td>Attribute02</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2024/1/1</th>
+                                    <td>ID03</td>
+                                    <td>Attribute03</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2024/1/1</th>
+                                    <td>ID04</td>
+                                    <td>Attribute04</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination justify-content-center" id="Searchpagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="~/Scripts/main.js"></script>
+<script src="~/Scripts/search.js"></script>
+

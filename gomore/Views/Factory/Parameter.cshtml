@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Parameter";
+}
+
+@Styles.Render("~/Content/main")
+@Styles.Render("~/Content/DarkMode")
+
+<main id="content" style="margin-left: 50px; margin-top: 70px;">
+    <section id="parameter">
+        <div class="parameter-wrapper">
+            <div class="parameter-container">
+                <div class="parameter-header justify-content-between">
+                    <div class="ms-2">
+                        <span>Paramater</span>
+                    </div>
+                </div>
+                <div class="parameter-body d-flex flex-column">
+                    <div class="ms-5 mt-4 mb-4">
+                        <span><b>File Name:</b><span> TEST.00</span></span>
+                    </div>
+                </div>
+                <div class="parameter-footer">
+                    <div class="table-container ms-5 mt-3 me-5">
+                        <table class="table table-bordered" id="parameter-table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Parameter</th>
+                                    <th scope="col">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Value00</th>
+                                    <th><input></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Value01</th>
+                                    <th><input></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Value02</th>
+                                    <th><input></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Value03</th>
+                                    <th><input></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Value04</th>
+                                    <th><input></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination justify-content-center" id="Parameterpagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="~/Scripts/main.js"></script>
+<script src="~/Scripts/parameter.js"></script>
